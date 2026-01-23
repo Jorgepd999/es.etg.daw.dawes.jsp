@@ -1,0 +1,24 @@
+package es.etg.daw.dawes.jsp.productos.infraestructura.web.enums;
+
+/**
+ * Contiene el listado de plantillas JSPs
+ */
+public enum JspView {
+
+    PRODUCT_LIST("productos-lista"),
+    PRODUCT_FORM("productos-formulario"),
+    PRODUCT_DETAIL("productos-detalle"),
+    PRODUCT_CREATED("producto-creado"),
+    ERROR_GENERIC("error/error-general");
+    
+
+    private final String path;
+
+    JspView(String path) {
+        this.path = path;
+    }
+
+    public String getPath() {
+        return this.path;
+    } 
+}
